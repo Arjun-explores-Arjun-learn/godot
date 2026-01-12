@@ -32,6 +32,14 @@
 
 #include "core/object/ref_counted.h"
 
+/**
+ * Note:
+ * Expression is a standalone expression evaluation system and is not equivalent
+ * to GDScript, even though it uses a similar syntax. As a result, not all
+ * GDScript features are supported. For example, StringName literal syntax using
+ * &"StringName" is not supported by Expression.parse(), and attempting to use it
+ * will result in an "Expected expression" parse error.
+ */
 class Expression : public RefCounted {
 	GDCLASS(Expression, RefCounted);
 
