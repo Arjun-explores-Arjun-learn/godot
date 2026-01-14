@@ -47,7 +47,11 @@
 		}
 		[/csharp]
 		[/codeblocks]
-		[b]Note:[/b] Expression is a standalone expression evaluation system and is not equivalent to GDScript. Some GDScript features are intentionally unsupported. In particular, the StringName literal syntax [code]&amp;"StringName"[/code] is not supported by [method parse] and will result in an [code]"Expected expression"[/code] parse error.
+		[b]Note:[/b] 
+		Expression is a standalone expression evaluation system and is not equivalent to GDScript.
+		The two have different feature sets and supported constructs.
+		For example, Expression does not support StringName or NodePath literals, and there are other differences as well.
+
 	</description>
 	<tutorials>
 		<link title="Evaluating Expressions">$DOCS_URL/tutorials/scripting/evaluating_expressions.html</link>
